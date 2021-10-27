@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>Resumo dos pedidos</h1>
+<div mat-dialog-content>Olá {{data.name}} esse é um resumo dos seus pedidos:
+    <mat-card class="example-card container">
+      <div>
+        <mat-card-title-group>
+          <mat-card-title>{{data.sabor}}</mat-card-title>
+          <mat-card-subtitle>{{data.borda}}</mat-card-subtitle>
+          <span class="mat-card-lg-image" [innerHTML]="data.image" style="margin-left: 5%; width: 30%;">
+          </span>
+          </mat-card-title-group>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-md-6">
+              <h2>Endereço de entrega:</h2>
+                <h3>Cidade: {{ data.cidade }}</h3>
+                <h3>Bairro: {{ data.bairro }}</h3>
+                <h3>Logradouro: {{ data.logradouro }}</h3>
+                <h3>Complemento: {{ data.complemento }}</h3>
+                <h3>valor: {{ data.valor | currency}}</h3>
+            </div>
+            <div class="col-md-6">
+                <span>DESTINADO AO MAPS</span>
+                <div class="col-md-12">
+                  <h1>Teste maps</h1>
+                </div>
+              </div>
+                <h2>Observações:</h2>
+                {{ data.observacoes }}
+            </div>
+          </mat-card-content>
+        </div>
+      </mat-card>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close mat-dialog-close="true">Cancelar</button>
+  <button mat-button (click)="adicionarPedido()" [mat-dialog-close]="fecharDialog">Comprar</button>
+</div>

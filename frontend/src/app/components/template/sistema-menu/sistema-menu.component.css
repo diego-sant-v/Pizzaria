@@ -1,0 +1,37 @@
+
+
+.sidenav {
+    background-color: #E2B766;
+    width: 150px;
+
+}
+
+.sidenav a {
+    color: #FFF;
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 0px;
+    background-color: #FFF;
+}
+
+.loader-container{
+    width: 100%;
+    z-index: 99;
+}
+.container{
+    float: left;
+    padding: 0px;
+
+}
+/*
+@media (max-width: 575.98px) { 
+    .nav-list_esconde{
+        visibility: hidden;
+    }
+ }
+*/

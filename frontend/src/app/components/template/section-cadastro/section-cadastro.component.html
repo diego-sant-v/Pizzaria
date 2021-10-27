@@ -1,0 +1,67 @@
+<form #f="ngForm">
+    <mat-card class="form">
+
+        <div class="col-md-6">
+
+            <div>
+                <p class="display-6">Cadastre-se</p>
+                <mat-form-field appearance="fill" class="col-md-6">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput placeholder="e-mail" type="email" [(ngModel)]="cliente.email" name="name">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="col-md-4 margin-left-form">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" placeholder="senha" [(ngModel)]="cliente.senha" name="senha">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="col-md-3">
+                    <mat-label>Sexo</mat-label>
+                    <mat-select>
+                        <mat-option value="1">Masculino</mat-option>
+                        <mat-option value="2">Feminino</mat-option>
+                        <mat-option value="3">Não informar</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+            <div class="col-md-12 mt-2">
+                <mat-form-field appearance="fill" class="col-md-4">
+                    <mat-label>Telefone</mat-label>
+                    <input matInput [(ngModel)]="cliente.telefone" name="cep">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="col-md-5 margin-left-form">
+                    <mat-label>Celular</mat-label>
+                    <input matInput [(ngModel)]="cliente.celular" name="cep">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="col-md-3">
+                    <mat-label>Cep</mat-label>
+                    <input matInput [(ngModel)]="cliente.cep" name="cep" id="cep" (blur)="pesquisaCep($event)">
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Logradouro</mat-label>
+                    <input matInput [(ngModel)]="cliente.logradouro" name="logradouro">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="margin-left-form">
+                    <mat-label>Complemento</mat-label>
+                    <input matInput [(ngModel)]="cliente.complemento" name="complemento">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="col-md-3 float-right-loc">
+                    <mat-label>Bairro</mat-label>
+                    <input matInput [(ngModel)]="cliente.bairro" name="bairro">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Localidade</mat-label>
+                    <input matInput [(ngModel)]="cliente.localidade" name="localidade">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="margin-left-form">
+                    <mat-label>UF</mat-label>
+                    <input matInput [(ngModel)]="cliente.uf" name="uf">
+                </mat-form-field>
+            </div>
+
+            <button mat-raised-button color="primary" class="btn mt-3" (click)="createCliente()">Cadastrar</button>
+        </div>
+    </mat-card>
+</form>

@@ -1,0 +1,217 @@
+<app-sistema-header></app-sistema-header>
+<div class="d-flex">
+    <div class="container-fluid">
+        <br>
+        <div class="row col-md-10 float-right">
+            <p class="display-6 text-center">TESTE COMPRAR</p>
+            <div class="col-md-12 row">
+                <div class="col-md-6 float-right">
+
+                    <h1>Selecione um sabor</h1>
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-checkbox type="checkbox" 
+                            id="saborSalgada"  
+                            required="required"
+                            (change)="selecionaTipoSalgada($event)"
+                            name="radio-escolhe">Pizza
+                            salgada</mat-checkbox>
+                    </mat-radio-group>
+                    <div class="row">
+                        <div *ngIf="saborSalgada == true">
+                            <mat-form-field appearance="fill" id="mat-salgada" class="margin-right">
+                                <mat-label>Selecione o sabor</mat-label>
+                                <mat-select id="mat-select-salgada" id="salgada-select" [(ngModel)]="pizza.sabor">
+                                    <mat-option value="Portuguesa" id="portuguesa" (click)="mostraSabor()">Portuguesa (25 R$)</mat-option>
+                                    <mat-option value="Calabresa" id="calabresa" (click)="mostraSabor()">Calabresa (22 R$)</mat-option>
+                                    <mat-option value="Marguerita" id="marguerita" (click)="mostraSabor()">Marguerita (28 R$)</mat-option>
+                                    <mat-option value="Frango com catupiry" id="frango-catupiry" (click)="mostraSabor()">Frango com catupiry (28 R$)</mat-option>
+                                    <mat-option value="Mussarela" id="mucarela" (click)="mostraSabor()">Muçarela (25 R$)</mat-option>
+                                    <mat-option value="Napolitana" id="napolitana" (click)="mostraSabor()">Napolitana (26 R$)</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field appearance="fill" id="mat-salgada-borda">
+                                <mat-label>Selecione a borda</mat-label>
+                                <mat-select [(ngModel)]="pizza.borda">
+                                    <mat-option value="gratis" (click)="mostraSabor()">Sem borda (grátis)</mat-option>
+                                    <mat-option value="cheddar" (click)="mostraSabor()">Cheddar (5,80 R$)</mat-option>
+                                    <mat-option value="cream-chease" (click)="mostraSabor()">Cream Cheese Philadelphia (6,50 R$)</mat-option>
+                                    <mat-option value="gergelim" (click)="mostraSabor()">Gergelim (8,50 R$)</mat-option>
+                                    <mat-option value="mista" (click)="mostraSabor()">Mista (Requeijão e Cheddar) (9,85 R$)</mat-option>
+                                    <mat-option value="requeijao" (click)="mostraSabor()">Requeijão (11 R$)</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field appearance="fill" floatLabel="always">
+                                <mat-label>Valor</mat-label>
+                                <input matInput type="number" class="example-right-align" placeholder="0" disabled [(ngModel)]="pizza.valor">
+                                <span matPrefix>$&nbsp;</span>
+                              </mat-form-field>
+                            <mat-form-field appearance="fill" class="col-md-12">
+                                <mat-label>Observações? (sem cebola, tomate, orégano...)</mat-label>
+                                <textarea matInput [(ngModel)]="pizza.observacoes"></textarea>
+                            </mat-form-field>
+                        </div>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-checkbox 
+                            (change)="selecionaTipoDoce($event)"
+                            type="checkbox" 
+                            id="sabor-doce" 
+                            name="radio-escolhe">Pizza doce</mat-checkbox>
+                        </mat-radio-group>
+                        <div *ngIf="saborDoce == true">
+                            <mat-form-field appearance="fill" class="margin-right">
+                                <mat-label>Selecione o sabor</mat-label>
+                                <mat-select [(ngModel)]="pizza.sabor">
+                                    <mat-option value="Morango com chocolate" id="morangochocolate" (click)="mostraSabor()">Morango com chocolate(35 R$)</mat-option>
+                                    <mat-option value="Avelã com chocolate" id="avelacomchocolate" (click)="mostraSabor()">Creme de avelã com chocolate(45 R$)</mat-option>
+                                    <mat-option value="Banofe" id="banofe" (click)="mostraSabor()">Banofe(42 R$)</mat-option>
+                                    <mat-option value="Coco com chocolate" id="coocochocolate" (click)="mostraSabor()">Coco com chocolate(42 R$)</mat-option>
+                                    <mat-option value="Romeu e Julieta" id="romeujulieta" (click)="mostraSabor()">Romeu e julieta(43 R$)</mat-option>
+                                    <mat-option value="Mms" id="mms" (click)="mostraSabor()">Mm's(40 R$)</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" id="mat-doce-borda">
+                                <mat-label>Selecione a borda</mat-label>
+                                <mat-select [(ngModel)]="pizza.borda">
+                                    <mat-option value="sem borda" (click)="mostraSabor()">Sem borda (grátis)</mat-option>
+                                    <mat-option value="doce_de_leite" (click)="mostraSabor()">Doce de leite(10 R$)</mat-option>
+                                    <mat-option value="chocolate" (click)="mostraSabor()">Chocolate(8 R$)</mat-option>
+                                    <mat-option value="prestigio" (click)="mostraSabor()">Prestigio(8 R$)</mat-option>
+                                    <mat-option value="avela" (click)="mostraSabor()">Avelã(15 R$)</mat-option>
+                                    <mat-option value="nuttela" (click)="mostraSabor()">Nuttela(18 R$)</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field appearance="fill" floatLabel="always">
+                                <mat-label>Valor</mat-label>
+                                <input matInput type="number" class="example-right-align" placeholder="0" disabled [(ngModel)]="pizza.valor">
+                                <span matPrefix>$&nbsp;</span>
+                              </mat-form-field>
+                            <mat-form-field appearance="fill" class="col-md-12">
+                                <mat-label>Observações? (sem cebola, tomate, orégano...)</mat-label>
+                                <textarea matInput [(ngModel)]="pizza.observacoes"></textarea>
+                            </mat-form-field>
+                        </div>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-checkbox type="checkbox"
+                             id="sabor-meio-a-meio"
+                             required="required"
+                             (change)="selecionaTipoMeio($event)"
+                             name="radio-escolhe">Pizza 1/2 a 1/2</mat-checkbox>
+                        </mat-radio-group>
+                        <div *ngIf="sabormeioAmeio == true">
+                            <mat-form-field appearance="fill" class="margin-right">
+                                <mat-label>Selecione o primeiro sabor</mat-label>
+                                <mat-select [(ngModel)]="pizza.sabor">
+                                    <mat-option value="portuguesa" (click)="mostraSabor()">Portuguesa</mat-option>
+                                    <mat-option value="calabresa" (click)="mostraSabor()">Calabresa</mat-option>
+                                    <mat-option value="marguerita" (click)="mostraSabor()">Marguerita</mat-option>
+                                    <mat-option value="frango-catupiry" (click)="mostraSabor()">Frango com catupiry</mat-option>
+                                    <mat-option value="mucarela" (click)="mostraSabor()">Muçarela</mat-option>
+                                    <mat-option value="mucarela" (click)="mostraSabor()">Napolitana</mat-option>
+                                    <mat-option value="morango-chocolate" (click)="mostraSabor()">Morango com chocolate</mat-option>
+                                    <mat-option value="avela-chocolate" (click)="mostraSabor()">Creme de avelã com chocolate</mat-option>
+                                    <mat-option value="banofe" (click)="mostraSabor()">Banofe</mat-option>
+                                    <mat-option value="coco-chocolate" (click)="mostraSabor()">Coco com chocolate</mat-option>
+                                    <mat-option value="romeu-julieta" (click)="mostraSabor()">Romeu e julieta</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill">
+                                <mat-label [(ngModel)]="pizza.sabor">Selecione o segundo sabor</mat-label>
+                                <mat-select>
+                                    <mat-option value="portuguesa" (click)="mostraSabor()">Portuguesa</mat-option>
+                                    <mat-option value="calabresa" (click)="mostraSabor()">Calabresa</mat-option>
+                                    <mat-option value="marguerita" (click)="mostraSabor()">Marguerita</mat-option>
+                                    <mat-option value="frango-catupiry" (click)="mostraSabor()">Frango com catupiry</mat-option>
+                                    <mat-option value="mucarela" (click)="mostraSabor()">Muçarela</mat-option>
+                                    <mat-option value="mucarela" (click)="mostraSabor()">Napolitana</mat-option>
+                                    <mat-option value="morango-chocolate" (click)="mostraSabor()">Morango com chocolate</mat-option>
+                                    <mat-option value="avela-chocolate" (click)="mostraSabor()">Creme de avelã com chocolate</mat-option>
+                                    <mat-option value="banofe" (click)="mostraSabor()">Banofe</mat-option>
+                                    <mat-option value="coco-chocolate" (click)="mostraSabor()">Coco com chocolate</mat-option>
+                                    <mat-option value="romeu-julieta" (click)="mostraSabor()">Romeu e julieta</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill">
+                                <mat-label>Selecione a borda</mat-label>
+                                <mat-select [(ngModel)]="pizza.borda">
+                                    <mat-option value="sem borda">Sem borda (grátis)</mat-option>
+                                    <mat-option value="doce-leite">Doce de leite</mat-option>
+                                    <mat-option value="chocolate">Chocolate</mat-option>
+                                    <mat-option value="prestigio">Prestigio</mat-option>
+                                    <mat-option value="avela">Avelã</mat-option>
+                                    <mat-option value="nuttela">Nuttela</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field appearance="fill" floatLabel="always">
+                                <mat-label>Valor</mat-label>
+                                <input matInput type="number" class="example-right-align" placeholder="0" disabled [(ngModel)]="pizza.valor">
+                                <span matPrefix>$&nbsp;</span>
+                              </mat-form-field>
+                            <mat-form-field appearance="fill" class="col-md-12">
+                                <mat-label>Observações? (sem cebola, tomate, orégano...)</mat-label>
+                                <textarea matInput [(ngModel)]="pizza.observacoes"></textarea>
+                            </mat-form-field>
+                        </div>
+                        <br>
+                        <mat-card class="example-card" *ngIf="pizza.sabor != ''">
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image"></div>
+                                <mat-card-title id="tipo-pizza" [innerHTML]="pizza.sabor"></mat-card-title>
+                                <mat-card-subtitle [innerHTML]="pizza.borda"></mat-card-subtitle>
+                            </mat-card-header>
+                                <span [innerHTML]="pizza.foto" alt="Foto da pizza"></span>
+                                <mat-list-item role="listitem" [innerHTML]="pizza.ingredientes"></mat-list-item>
+                                <div class="row div-alinha">
+                                    <mat-list role="list" *ngIf="pizza.observacoes != ''">
+                                            <h2>Observações:</h2>
+                                              <mat-list role="list">
+                                                <ul>
+                                                    <li [innerHTML]="pizza.observacoes">Molho de tomate</li>
+                                                </ul>
+                                              </mat-list>
+                                      </mat-list>
+                                    <div class="row col-md-4">
+                                        <button mat-raised-button color="primary" (click)="openDialog()">
+                                            <i class="material-icons">
+                                                local_grocery_store
+                                            </i>Adicionar
+                                        </button>
+                                    </div>
+                    
+                                </div>
+                        </mat-card>
+
+                        <!--<mat-card class="example-card">
+                            <mat-card-title-group>
+                              <mat-card-title>Shiba Inu</mat-card-title>
+                              <mat-card-subtitle>Large</mat-card-subtitle>
+                              <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+                            </mat-card-title-group>
+                            <mat-card-content>
+
+                            </mat-card-content>
+                            <mat-card-actions align="end">
+                                <button mat-button>Like</button>
+                                <button mat-button>SHARE</button>
+                              </mat-card-actions>
+                          </mat-card>!-->
+                          
+                    </div>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                </div>
+                <div class="col-md-6 float-right row">
+
+                    <h1>Monte a sua própria pizza</h1>
+                </div>
+            </div>
+            <div class="col-md-10 div-alinha"></div>
+        </div>
+
+
+    </div>
+
+</div>
+<app-sistema-menu></app-sistema-menu>

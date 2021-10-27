@@ -1,0 +1,38 @@
+<div class="div-section">
+    <h1>Entrar</h1>
+    <div>
+        <mat-card class="example-card">
+            <mat-card-header>
+            </mat-card-header>
+            <img class="logo_principal" src="assets/imagens/pizarria.png" alt="logo">
+            <mat-card-content>
+                <p>
+                    Seja bem-vindo a nossa plataforma
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <mat-form-field appearance="fill" class="col-md-12">
+                    <mat-label>Digite o seu e-mail</mat-label>
+                    <input matInput id="name" name="name" [(ngModel)] = "usuario.email" #name = "ngModel">
+                    <div *ngIf="name.invalid">
+                        O login deve ser informado
+
+                    </div>
+                </mat-form-field>
+                <div>
+                    <mat-form-field appearance="fill" class="col-md-12">
+                        <mat-label>Digite a sua senha</mat-label>
+                        <input matInput id="senha" name="senha" [(ngModel)] = "usuario.senha" #senha = "ngModel" type="password">
+                        <div *ngIf="senha.invalid">
+                            A senha deve ser informada
+    
+                        </div>
+                    </mat-form-field>
+                </div>
+                <div class="example-button-row">
+                    <button mat-raised-button color="primary"  class="mt-2" (click)="login()" [disabled]="name.invalid // senha.invalid" >Entrar</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

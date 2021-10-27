@@ -1,0 +1,22 @@
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.foto-card{
+  height: 18rem;
+}
+
+.example-card {
+    max-width: 400px;
+    padding: 8%;
+    margin: 8%;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+  

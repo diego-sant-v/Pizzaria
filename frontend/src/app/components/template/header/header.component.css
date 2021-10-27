@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #056033;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header > button:hover{
+    background-color: #efce75ad;
+    
+}
+
+.header .logo {
+    max-width: 72px;
+}
+
+.header > button{
+    color: white;
+}
+
+.loader-container{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
