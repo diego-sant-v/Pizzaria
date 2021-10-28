@@ -1818,6 +1818,90 @@
           "saborDaPizza": "Morango com chocolate",
           "borda": "chocolate",
           "valor": 43
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "chocolate",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "cream-chease",
+          "valor": 28.5
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "gergelim",
+          "valor": 30.5
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Coco com chocolate",
+          "borda": "chocolate",
+          "valor": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "chocolate",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "chocolate",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "cream-chease",
+          "valor": 28.5
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "chocolate",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "nuttela",
+          "valor": 58
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "nuttela",
+          "valor": 58
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50
         }
       ],
       "telefone": "+551141499080",
@@ -2275,6 +2359,192 @@
       "uf": "SP",
       "complemento": "2",
       "id": 155
+    },
+    {
+      "email": "TTT",
+      "senha": "TTT",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "chocolate",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Frango com catupiry",
+          "borda": "cheddar",
+          "valor": 33.8
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Banofe",
+          "borda": "chocolate",
+          "valor": 50
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Mussarela",
+          "borda": "mista",
+          "valor": 34.85
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Frango com catupiry",
+          "borda": "requeijao",
+          "valor": 39
+        },
+        {
+          "idDoPedido": 156,
+          "saborDaPizza": "Mms",
+          "borda": "avela",
+          "valor": 55
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "2",
+      "id": 156
+    },
+    {
+      "email": "yugtuyt",
+      "senha": "yugtuyt",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 157,
+          "saborDaPizza": "Mms",
+          "borda": "chocolate",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 157,
+          "saborDaPizza": "Marguerita",
+          "borda": "cream-chease",
+          "valor": 34.5
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "212",
+      "id": 157
+    },
+    {
+      "email": "cAAa",
+      "senha": "cAAa",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Mms",
+          "borda": "nuttela",
+          "valor": 58
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Romeu e Julieta",
+          "borda": "prestigio",
+          "valor": 51
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Marguerita",
+          "borda": "gergelim",
+          "valor": 36.5
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Mms",
+          "borda": "avela",
+          "valor": 55
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Banofe",
+          "borda": "chocolate",
+          "valor": 50
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Mms",
+          "borda": "avela",
+          "valor": 55
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Mms",
+          "borda": "chocolate",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Banofe",
+          "borda": "",
+          "valor": 42
+        },
+        {
+          "idDoPedido": 158,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "222",
+      "id": 158
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ClienteService } from './../cliente/cliente.service';
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -10,11 +11,9 @@ import { Cliente } from '../cliente/cliente.model';
   styleUrls: ['./dialog-example.component.css']
 })
 export class DialogExampleComponent implements OnInit {
-  lat: number = -23.8779431
-  lng: number = -49.8046873
   fecharDialog: any
   
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any, public ClienteService: ClienteService) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any, public ClienteService: ClienteService, public Router: Router) { }
 
   ngOnInit(): void {
   }
@@ -59,6 +58,13 @@ export class DialogExampleComponent implements OnInit {
     console.log(this.ClienteService.informacoesPedido[3])
     //coloquei o fecharDialog e o dialog result ta vindo undeffined
     this.fecharDialog = true
+    //depois que ele finaliza o pedido ele vai pra tela de pedidos
+    //ta travando um pouco e algumas vezes nao aprece, depois tentar fazer com observable
+    setTimeout(() => {
+      console.log('teste')
+      this.Router.navigate(['/pedidos']);
+    }, 500)
+    
   }
 
 }

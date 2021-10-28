@@ -6,10 +6,16 @@
         </a>
     </span>
 
-
-    <button mat-button class="float-right" (click)="deslogarUsuario()">
-        <img class="logo" src="assets/imagens/acount.svg" alt="logo">
-    </button>
+    <div class="col-md-12 float-right">
+        <div class="col-md-11">
+            <a mat-button class="float-right" mat-button  (click)="deslogarUsuario()">
+                <mat-icon>person_outline</mat-icon>
+            </a>
+            <a mat-button class="float-right">
+                <mat-icon matBadge={{numeroDePedidos}} matBadgeColor="warn" (click)="calcularNumerodePedidos()">add_shopping_cart</mat-icon>
+            </a>
+        </div>
+    </div>
 
     <button mat-button>
     

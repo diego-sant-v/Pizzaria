@@ -52,6 +52,7 @@ import { BebidasNaoAlcolicasComponent } from './components/bebidas-nao-alcolicas
 import { DrinksComponent } from './components/drinks/drinks.component';
 import { PizasSalgadasComponent } from './components/pizas-salgadas/pizas-salgadas.component';
 import { PizasDocesComponent } from './components/pizas-doces/pizas-doces.component';
+import { MatBadgeModule } from '@angular/material/badge';
 
 
 @NgModule({
@@ -108,7 +109,8 @@ import { PizasDocesComponent } from './components/pizas-doces/pizas-doces.compon
     MatDialogModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatBadgeModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
