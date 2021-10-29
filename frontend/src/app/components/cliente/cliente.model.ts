@@ -17,7 +17,7 @@ export interface Cliente {
         tipoDaPizza?: string,
         saborDaPizza?: string,
         borda?: string,
-        valor?: number,
+        valor?: number
     }]
 
 

@@ -1699,6 +1699,36 @@
           "saborDaPizza": "Marguerita",
           "borda": "requeijao",
           "valor": 39
+        },
+        {
+          "idDoPedido": 141,
+          "saborDaPizza": "Mms",
+          "borda": "chocolate",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 141,
+          "saborDaPizza": "Morango com chocolate",
+          "borda": "prestigio",
+          "valor": 43
+        },
+        {
+          "idDoPedido": 141,
+          "saborDaPizza": "Romeu e Julieta",
+          "borda": "chocolate",
+          "valor": 51
+        },
+        {
+          "idDoPedido": 141,
+          "saborDaPizza": "Mms",
+          "borda": "doce_de_leite",
+          "valor": 50
+        },
+        {
+          "idDoPedido": 141,
+          "saborDaPizza": "Banofe",
+          "borda": "nuttela",
+          "valor": 60
         }
       ],
       "telefone": "+551141499080",
@@ -1902,6 +1932,48 @@
           "saborDaPizza": "Banofe",
           "borda": "prestigio",
           "valor": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "chocolate",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Morango com chocolate",
+          "borda": "avela",
+          "valor": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mussarela",
+          "borda": "requeijao",
+          "valor": 36
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "doce_de_leite",
+          "valor": 55
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "doce de leite",
+          "valor": 52
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Marguerita",
+          "borda": "gergelim",
+          "valor": 36.5
         }
       ],
       "telefone": "+551141499080",
@@ -2545,6 +2617,162 @@
       "uf": "SP",
       "complemento": "222",
       "id": 158
+    },
+    {
+      "email": "dieguinho111",
+      "senha": "dieguinho111",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 159,
+          "saborDaPizza": "Calabresa",
+          "borda": "gergelim",
+          "valor": 30.5
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "2",
+      "id": 159
+    },
+    {
+      "email": "q",
+      "senha": "q",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "valor": 28
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "2",
+      "id": 160
+    },
+    {
+      "email": "asdadasd",
+      "senha": "asdadasd",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "foto": "",
+          "valor": 28
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "2",
+      "id": 161
+    },
+    {
+      "email": "TT",
+      "senha": "TT",
+      "cep": "06825050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "foto": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 162,
+          "saborDaPizza": "Portuguesa",
+          "borda": "cream-chease",
+          "valor": 31.5
+        },
+        {
+          "idDoPedido": 162,
+          "saborDaPizza": "Calabresa",
+          "borda": "cream-chease",
+          "valor": 28.5
+        },
+        {
+          "idDoPedido": 162,
+          "saborDaPizza": "Portuguesa",
+          "borda": "cream-chease",
+          "valor": 31.5
+        },
+        {
+          "foto": "<div class=\"row col-md-12\">\n       <img src=\"../../../../../assets/imagens/portuguesa.jpg\">\n       <div>"
+        },
+        {
+          "foto": "<div class=\"row col-md-12\">\n       <img src=\"../../../../../assets/imagens/portuguesa.jpg\">\n       <div>"
+        },
+        {
+          "idDoPedido": 162,
+          "saborDaPizza": "Portuguesa",
+          "borda": "cream-chease",
+          "valor": 31.5
+        },
+        {
+          "idDoPedido": 162,
+          "saborDaPizza": "Portuguesa",
+          "borda": "cream-chease",
+          "valor": 0
+        }
+      ],
+      "telefone": "11953324198",
+      "celular": "06825050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "2",
+      "id": 162
+    },
+    {
+      "email": "teste depois",
+      "senha": "teste depois",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 163,
+          "saborDaPizza": "Calabresa",
+          "borda": "gergelim",
+          "valor": 30.5
+        },
+        {
+          "idDoPedido": 163,
+          "saborDaPizza": "Coco com chocolate",
+          "borda": "chocolate",
+          "valor": 50
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "2",
+      "id": 163
     }
   ]
 }

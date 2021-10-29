@@ -11,9 +11,28 @@
             <a mat-button class="float-right" mat-button  (click)="deslogarUsuario()">
                 <mat-icon>person_outline</mat-icon>
             </a>
-            <a mat-button class="float-right">
+
+            <button mat-button [matMenuTriggerFor]="aboveMenu" class="btn_header float-right">
                 <mat-icon matBadge={{numeroDePedidos}} matBadgeColor="warn" (click)="calcularNumerodePedidos()">add_shopping_cart</mat-icon>
-            </a>
+            </button>
+            <mat-menu #aboveMenu="matMenu" yPosition="above">
+                <div *ngFor="let pedido of pedidos">
+                    <mat-card class="example-card" style="margin: 2%;">
+                        <mat-card-title-group>
+                          <mat-card-title>{{ pedido.saborDaPizza }}</mat-card-title>
+                          <mat-card-subtitle>{{ pedido.borda }}</mat-card-subtitle>
+                        </mat-card-title-group>
+                        <mat-card-content>
+                            <p>{{ pedido.valor | currency }}</p>
+                          <!-- <span [innerHTML]="pizza" alt="Foto da pizza"></span>!-->
+                        </mat-card-content>
+                      </mat-card>
+                </div>
+                <!--
+                    <button mat-menu-item routerLink="/cadastrar">Cadastrar-se</button>
+                    <button mat-menu-item routerLink="/login">Entrar</button>
+                    !-->
+            </mat-menu>
         </div>
     </div>
 

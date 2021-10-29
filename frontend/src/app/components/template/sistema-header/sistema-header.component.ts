@@ -9,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SistemaHeaderComponent implements OnInit {
   numeroDePedidos: any
+  sabor: any
+  borda: any
+  valor: any
+  pedidos: any
 
   constructor(public clienteService: ClienteService, public router: Router) { }
 
@@ -28,6 +32,13 @@ export class SistemaHeaderComponent implements OnInit {
     console.log(this.clienteService.usuarioLogado.pedido)
     console.log(this.clienteService.usuarioLogado.pedido?.length)
 
+    this.sabor = this.clienteService.usuarioLogado.pedido?.map(x => x.saborDaPizza)
+    this.borda = this.clienteService.usuarioLogado.pedido?.map(x => x.borda)
+    this.valor = this.clienteService.usuarioLogado.pedido?.map(x => x.valor)
+    this.pedidos = this.clienteService.usuarioLogado.pedido
+    //eu usei o ngFor para acessar primeiramente a variavel pedido, que está armazenando
+    //o this.clienteService.usuarioLogado.pedido, após isso eu acessei, no html, o sabor e a borda
+    //usando notação de ponto dentro de {{}}
   }
 
 }

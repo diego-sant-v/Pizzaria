@@ -397,7 +397,7 @@ export class ComprarComponent implements OnInit {
         break;
 
         //
-        case 'doce_de_leite':
+        case 'doce de leite':
         this.pizza.valor += 10
         console.log('Borda doce de leite');
         break;
