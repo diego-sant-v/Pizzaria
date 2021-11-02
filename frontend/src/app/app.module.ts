@@ -53,6 +53,7 @@ import { DrinksComponent } from './components/drinks/drinks.component';
 import { PizasSalgadasComponent } from './components/pizas-salgadas/pizas-salgadas.component';
 import { PizasDocesComponent } from './components/pizas-doces/pizas-doces.component';
 import { MatBadgeModule } from '@angular/material/badge';
+import { PizzaVeganaComponent } from './components/pizza-vegana/pizza-vegana.component';
 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     DrinksComponent,
     PizasSalgadasComponent,
     PizasDocesComponent,
+    PizzaVeganaComponent
   ],
   entryComponents: [DialogExampleComponent],
   imports: [

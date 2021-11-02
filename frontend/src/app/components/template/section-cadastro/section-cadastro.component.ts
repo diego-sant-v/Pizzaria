@@ -20,6 +20,7 @@ export class SectionCadastroComponent implements OnInit {
     pedido: [{
       saborDaPizza: '',
       borda: '',
+      foto: '',
       valor: 28
     }]
 

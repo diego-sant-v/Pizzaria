@@ -23,7 +23,9 @@
                           <mat-card-subtitle>{{ pedido.borda }}</mat-card-subtitle>
                         </mat-card-title-group>
                         <mat-card-content>
-                            <p>{{ pedido.valor | currency }}</p>
+                            <p><b>total:</b> {{ pedido.valor | currency }}</p>
+                            <span [innerHTML]="pedido.foto" alt="Foto da pizza">
+                            </span>
                           <!-- <span [innerHTML]="pizza" alt="Foto da pizza"></span>!-->
                         </mat-card-content>
                       </mat-card>

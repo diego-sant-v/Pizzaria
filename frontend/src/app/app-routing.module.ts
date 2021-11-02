@@ -1,3 +1,4 @@
+import { PizzaVeganaComponent } from './components/pizza-vegana/pizza-vegana.component';
 import { PizasSalgadasComponent } from './components/pizas-salgadas/pizas-salgadas.component';
 import { PizasDocesComponent } from './components/pizas-doces/pizas-doces.component';
 import { DrinksComponent } from './components/drinks/drinks.component';
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'drinks', component: DrinksComponent },
   { path: 'pizzas-doces', component: PizasDocesComponent },
   { path: 'pizzas-salgadas', component: PizasSalgadasComponent },
+  { path: 'pizzas-veganas', component: PizzaVeganaComponent },
 ];
 
 @NgModule({

@@ -13,6 +13,7 @@ export class SistemaHeaderComponent implements OnInit {
   borda: any
   valor: any
   pedidos: any
+  teste: any
 
   constructor(public clienteService: ClienteService, public router: Router) { }
 

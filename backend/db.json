@@ -1974,6 +1974,140 @@
           "saborDaPizza": "Marguerita",
           "borda": "gergelim",
           "valor": 36.5
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Portuguesa",
+          "borda": "cheddar",
+          "valor": 30.8
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "avela",
+          "valor": 57
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "doce de leite",
+          "valor": 52
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Marguerita",
+          "borda": "requeijao",
+          "valor": 39
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "mista",
+          "valor": 31.85
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Marguerita",
+          "borda": "gergelim",
+          "valor": 36.5
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "avela",
+          "valor": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "gergelim",
+          "valor": 30.5
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Portuguesa",
+          "borda": "cream-chease",
+          "valor": 31.5
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Marguerita",
+          "borda": "gergelim",
+          "valor": 36.5,
+          "foto": "../../../../../assets/imagens/marguerita.jpg"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48,
+          "foto": "../../../../../assets/imagens/mms.jpg"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Portuguesa",
+          "borda": "cream-chease",
+          "valor": 31.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/portuguesa.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "cream-chease",
+          "valor": 28.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/calabresa.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "chocolate",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/mms.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Marguerita",
+          "borda": "cream-chease",
+          "valor": 34.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/marguerita.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/mms.jpg\">\n        <div>"
         }
       ],
       "telefone": "+551141499080",
@@ -2773,6 +2907,150 @@
       "uf": "SP",
       "complemento": "2",
       "id": 163
+    },
+    {
+      "email": "1111",
+      "senha": "1111",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 164,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48
+        },
+        {
+          "idDoPedido": 164,
+          "saborDaPizza": "Marguerita",
+          "borda": "gergelim",
+          "valor": 36.5
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "2",
+      "id": 164
+    },
+    {
+      "email": "tessss",
+      "senha": "tessss",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "foto": "",
+          "valor": 28
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Portuguesa",
+          "borda": "requeijao",
+          "valor": 36,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/portuguesa.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Calabresa",
+          "borda": "gergelim",
+          "valor": 30.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/calabresa.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Marguerita",
+          "borda": "cream-chease",
+          "valor": 34.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/marguerita.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Frango com catupiry",
+          "borda": "gergelim",
+          "valor": 36.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/frango-catupiry.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Mussarela",
+          "borda": "gergelim",
+          "valor": 33.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/mucarela.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Napolitana",
+          "borda": "gergelim",
+          "valor": 34.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/napolitano.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Morango com chocolate",
+          "borda": "chocolate",
+          "valor": 43,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/morango-chocolate.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Coco com chocolate",
+          "borda": "chocolate",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/coco-chocolate.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Romeu e Julieta",
+          "borda": "prestigio",
+          "valor": 51,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/romeu-julieta.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Mms",
+          "borda": "prestigio",
+          "valor": 48,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/mms.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 165,
+          "saborDaPizza": "Frango com catupiry",
+          "borda": "cream-chease",
+          "valor": 34.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/frango-catupiry.jpg\">\n        <div>"
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "222",
+      "id": 165
     }
   ]
 }

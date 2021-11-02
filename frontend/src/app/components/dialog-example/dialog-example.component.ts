@@ -12,10 +12,28 @@ import { Cliente } from '../cliente/cliente.model';
 })
 export class DialogExampleComponent implements OnInit {
   fecharDialog: any
+  fotoAtualDaPizza: any
   
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, public ClienteService: ClienteService, public Router: Router) { }
 
   ngOnInit(): void {
+    let sabores = this.ClienteService.usuarioLogado.pedido?.map(x => x.saborDaPizza)
+    /*
+    console.log('chegou em sabores')
+    console.log(sabores)
+        switch (sabores) {
+          case ['Calabresa']:
+            console.log('Man é portuguesa');
+            console.log('chegou em pizza')
+            break;
+
+            case ['Banofe']:
+              console.log('Man é banofe');
+              console.log('chegou em pizza')
+              break;
+        }
+        COMENTEI TMB A FOTO DA PIZZA EM adicionarPedido()
+    */
   }
 
   adicionarPedido(){
@@ -23,12 +41,96 @@ export class DialogExampleComponent implements OnInit {
     //porem falta atribuilos de fato ao objeto armazenado na variavel usuarioLogado
     //ele está criando pedidos avulso
     let clienteTeste = this.ClienteService.usuarioLogado
+    let saborDaPizza = clienteTeste
+
+    console.log('o saborrrrrr')
+    console.log(saborDaPizza)
+    //abaixo atribui a variavel saborAtualDapizza ao valor da pizza selecionada
+    let saborAtualDapizza = this.ClienteService.informacoesPedido[0]
+    console.log('teste mamaa')
+    console.log(saborAtualDapizza)
+
+    switch (saborAtualDapizza) {
+        case 'Portuguesa':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/portuguesa.jpg">
+        <div>`
+        break;
+
+        case 'Calabresa':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/calabresa.jpg">
+        <div>`
+        break;
+
+        case 'Marguerita':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/marguerita.jpg">
+        <div>`
+        break;
+
+        case 'Frango com catupiry':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/frango-catupiry.jpg">
+        <div>`
+        break;
+
+        case 'Mussarela':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/mucarela.jpg">
+        <div>`
+        break;
+
+        case 'Napolitana':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/napolitano.jpg">
+        <div>`
+        break;
+
+        case 'Morango com chocolate':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/morango-chocolate.jpg">
+        <div>`
+        break;
+
+        case 'Coco com chocolate':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/coco-chocolate.jpg">
+        <div>`
+        break;
+
+        case 'Avelã com chocolate':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/avela-chocolate.jpg">
+        <div>`
+        break;
+
+        case 'Banofe':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/banofe.jpg">
+        <div>`
+        break;
+
+        case 'Romeu e Julieta':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/romeu-julieta.jpg">
+        <div>`
+        break;
+        
+        case 'Mms':
+        this.fotoAtualDaPizza = `<div class="row col-md-12">
+        <img src="../../../../../assets/imagens/mms.jpg">
+        <div>`
+        break;
+
+    }
     //usei o push para inserir novos objetos dentro do array principal de clienteTeste.pedido
     clienteTeste.pedido?.push({
       idDoPedido: this.ClienteService.usuarioLogado.id,
       saborDaPizza: this.ClienteService.informacoesPedido[0],
       borda: this.ClienteService.informacoesPedido[1],
-      valor: this.ClienteService.valorDaPizza
+      valor: this.ClienteService.valorDaPizza,
+      foto: this.fotoAtualDaPizza
     })
     //clienteTeste.pedido = [{
         //idDoPedido: this.ClienteService.usuarioLogado.id,
