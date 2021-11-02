@@ -17,6 +17,7 @@
     <mat-menu #cardapio="matMenu">
     <button mat-menu-item [matMenuTriggerFor]="pizza">Pizzas</button>
     <button mat-menu-item [matMenuTriggerFor]="bebidas">Bebidas</button>
+    <button mat-menu-item [matMenuTriggerFor]="combos">Combos</button>
     </mat-menu>
 
     <mat-menu #pizza="matMenu">
@@ -29,6 +30,14 @@
         <button mat-menu-item routerLink="/bebidas-alcolicas">Alcólicas</button>
         <button mat-menu-item routerLink="/bebidas-nao-alcolicas">Não alcólicas</button>
         <button mat-menu-item routerLink="/drinks">Drinks</button>
+    </mat-menu>
+
+    <mat-menu #combos="matMenu">
+        <button mat-menu-item routerLink="/combos">Combos(mais pedidos)</button>
+        <button mat-menu-item routerLink="/combos-bebidas-drinks">Combos(com drinks)</button>
+        <button mat-menu-item routerLink="/combos-bebidas-alcolicas">Combos(com bebidas alcólicas)</button>
+        <button mat-menu-item routerLink="/combos-refrigerante">Combos(com refrigerantes)</button>
+
     </mat-menu>
 
 

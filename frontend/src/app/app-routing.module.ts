@@ -1,3 +1,7 @@
+import { CombosPizzaDrinksComponent } from './components/combos-pizza-drinks/combos-pizza-drinks.component';
+import { CombosPizzaAlcolicasComponent } from './components/combos-pizza-alcolicas/combos-pizza-alcolicas.component';
+import { CombosPizzaRefriComponent } from './components/combos-pizza-refri/combos-pizza-refri.component';
+import { CombosComponent } from './components/combos/combos.component';
 import { PizzaVeganaComponent } from './components/pizza-vegana/pizza-vegana.component';
 import { PizasSalgadasComponent } from './components/pizas-salgadas/pizas-salgadas.component';
 import { PizasDocesComponent } from './components/pizas-doces/pizas-doces.component';
@@ -36,6 +40,10 @@ const routes: Routes = [
   { path: 'pizzas-doces', component: PizasDocesComponent },
   { path: 'pizzas-salgadas', component: PizasSalgadasComponent },
   { path: 'pizzas-veganas', component: PizzaVeganaComponent },
+  { path: 'combos', component: CombosComponent },
+  { path: 'combos-refrigerante', component: CombosPizzaRefriComponent },
+  { path: 'combos-bebidas-alcolicas', component: CombosPizzaAlcolicasComponent },
+  { path: 'combos-bebidas-drinks', component: CombosPizzaDrinksComponent },
 ];
 
 @NgModule({

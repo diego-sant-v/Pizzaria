@@ -54,6 +54,10 @@ import { PizasSalgadasComponent } from './components/pizas-salgadas/pizas-salgad
 import { PizasDocesComponent } from './components/pizas-doces/pizas-doces.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { PizzaVeganaComponent } from './components/pizza-vegana/pizza-vegana.component';
+import { CombosComponent } from './components/combos/combos.component';
+import { CombosPizzaRefriComponent } from './components/combos-pizza-refri/combos-pizza-refri.component';
+import { CombosPizzaDrinksComponent } from './components/combos-pizza-drinks/combos-pizza-drinks.component';
+import { CombosPizzaAlcolicasComponent } from './components/combos-pizza-alcolicas/combos-pizza-alcolicas.component';
 
 
 @NgModule({
@@ -84,7 +88,11 @@ import { PizzaVeganaComponent } from './components/pizza-vegana/pizza-vegana.com
     DrinksComponent,
     PizasSalgadasComponent,
     PizasDocesComponent,
-    PizzaVeganaComponent
+    PizzaVeganaComponent,
+    CombosComponent,
+    CombosPizzaRefriComponent,
+    CombosPizzaDrinksComponent,
+    CombosPizzaAlcolicasComponent
   ],
   entryComponents: [DialogExampleComponent],
   imports: [
