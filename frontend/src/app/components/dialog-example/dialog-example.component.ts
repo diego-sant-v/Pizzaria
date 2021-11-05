@@ -130,7 +130,8 @@ export class DialogExampleComponent implements OnInit {
       saborDaPizza: this.ClienteService.informacoesPedido[0],
       borda: this.ClienteService.informacoesPedido[1],
       valor: this.ClienteService.valorDaPizza,
-      foto: this.fotoAtualDaPizza
+      foto: this.fotoAtualDaPizza,
+      tempoDeEspera: this.ClienteService.tempoMediodeEspera
     })
     //clienteTeste.pedido = [{
         //idDoPedido: this.ClienteService.usuarioLogado.id,

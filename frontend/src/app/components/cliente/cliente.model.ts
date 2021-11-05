@@ -18,7 +18,9 @@ export interface Cliente {
         saborDaPizza?: string,
         borda?: string,
         valor?: number,
-        foto?: string
+        foto?: string,
+        tempoDeEspera?: number,
+        statusDoPedido?: string
     }]
 
 

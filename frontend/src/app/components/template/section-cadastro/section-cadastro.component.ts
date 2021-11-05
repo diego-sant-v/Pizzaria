@@ -21,8 +21,11 @@ export class SectionCadastroComponent implements OnInit {
       saborDaPizza: '',
       borda: '',
       foto: '',
-      valor: 28
-    }]
+      valor: 28,
+      tempoDeEspera: 0,
+      statusDoPedido: ''
+    }],
+    
 
   }
   //no construutor eu posso injetar o meotodo do cliente.service.ts

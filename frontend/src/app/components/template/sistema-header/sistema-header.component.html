@@ -12,10 +12,11 @@
                 <mat-icon>person_outline</mat-icon>
             </a>
 
-            <button mat-button [matMenuTriggerFor]="aboveMenu" class="btn_header float-right">
+            <button mat-button [matMenuTriggerFor]="todosOsPedidos" class="btn_header float-right">
                 <mat-icon matBadge={{numeroDePedidos}} matBadgeColor="warn" (click)="calcularNumerodePedidos()">add_shopping_cart</mat-icon>
             </button>
-            <mat-menu #aboveMenu="matMenu" yPosition="above">
+
+            <mat-menu #todosOsPedidos="matMenu" yPosition="above">
                 <div *ngFor="let pedido of pedidos">
                     <mat-card class="example-card" style="margin: 2%;">
                         <mat-card-title-group>
@@ -23,12 +24,48 @@
                           <mat-card-subtitle>{{ pedido.borda }}</mat-card-subtitle>
                         </mat-card-title-group>
                         <mat-card-content>
-                            <p><b>total:</b> {{ pedido.valor | currency }}</p>
-                            <span [innerHTML]="pedido.foto" alt="Foto da pizza">
-                            </span>
+                            <p>
+                                <b>total:</b> {{ pedido.valor | currency }}
+                            </p>
+                            <span [innerHTML]="pedido.foto" alt="Foto da pizza"></span>
+                            <p>
+                                <b>tempo: {{ pedido.tempoDeEspera}} minutos</b>
+                            </p>
                           <!-- <span [innerHTML]="pizza" alt="Foto da pizza"></span>!-->
                         </mat-card-content>
                       </mat-card>
+                </div>
+                <!--
+                    <button mat-menu-item routerLink="/cadastrar">Cadastrar-se</button>
+                    <button mat-menu-item routerLink="/login">Entrar</button>
+                    !-->
+            </mat-menu>
+            <!-- IREI DEIXAR COMENTADO POIS AINDA NÃO ESTÁ FUNCIONANDO 
+            <button mat-button [matMenuTriggerFor]="mostraStatus" class="btn_header float-right">
+                <mat-icon matBadge={{numeroDePedidos}} matBadgeColor="warn" (click)="verificarStatusDoPedido()">notification_important</mat-icon>
+            </button>
+            !-->
+            <mat-menu #mostraStatus="matMenu" yPosition="above">
+                <div *ngIf="temStatus === true ">
+                    <h1>teste</h1>
+                    <div *ngFor="let status of pedidos">
+                        <mat-card class="example-card" style="margin: 2%;">
+                            <mat-card-title-group>
+                            <mat-card-title>{{ status.saborDaPizza }}</mat-card-title>
+                            <mat-card-subtitle>{{ status.borda }}</mat-card-subtitle>
+                            </mat-card-title-group>
+                            <mat-card-content>
+                                <p>
+                                    <b>total:</b> {{ status.valor | currency }}
+                                </p>
+                                <span [innerHTML]="status.foto" alt="Foto da pizza"></span>
+                                <p>
+                                    <b>tempo: {{ status.tempoDeEspera}} minutos</b>
+                                </p>
+                            <!-- <span [innerHTML]="pizza" alt="Foto da pizza"></span>!-->
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
                 </div>
                 <!--
                     <button mat-menu-item routerLink="/cadastrar">Cadastrar-se</button>

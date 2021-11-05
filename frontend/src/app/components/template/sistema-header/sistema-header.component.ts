@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sistema-header.component.css']
 })
 export class SistemaHeaderComponent implements OnInit {
+  temStatus = false
+  statusDoPedido: ''
   numeroDePedidos: any
   sabor: any
   borda: any
@@ -18,6 +20,7 @@ export class SistemaHeaderComponent implements OnInit {
   constructor(public clienteService: ClienteService, public router: Router) { }
 
   ngOnInit(): void {
+    this.verificarStatusDoPedido
     this.calcularNumerodePedidos
     this.numeroDePedidos = this.clienteService.usuarioLogado.pedido?.length
   }
@@ -25,6 +28,14 @@ export class SistemaHeaderComponent implements OnInit {
   deslogarUsuario(){
       this.clienteService.showMessage('Desconectado')
       this.router.navigate(['/login'])
+
+  }
+
+  verificarStatusDoPedido(){
+    this.temStatus = true
+    let tempo = this.clienteService.usuarioLogado.pedido?.map(x => x.tempoDeEspera)
+    console.log('tempo de espera é')
+    console.log(tempo)
 
   }
 

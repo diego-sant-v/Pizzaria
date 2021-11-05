@@ -2108,6 +2108,214 @@
           "borda": "prestigio",
           "valor": 48,
           "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/mms.jpg\">\n        <div>"
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "chocolate",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "gergelim",
+          "valor": 30.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/calabresa.jpg\">\n        <div>",
+          "tempoDeEspera": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "avela",
+          "valor": 60,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "cream-chease",
+          "valor": 28.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/calabresa.jpg\">\n        <div>",
+          "tempoDeEspera": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "mista",
+          "valor": 31.85,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/calabresa.jpg\">\n        <div>",
+          "tempoDeEspera": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Calabresa",
+          "borda": "cream-chease",
+          "valor": 28.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/calabresa.jpg\">\n        <div>",
+          "tempoDeEspera": 50
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "nuttela",
+          "valor": 60,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "chocolate",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "chocolate",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "chocolate",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Morango com chocolate",
+          "borda": "doce de leite",
+          "valor": 45,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/morango-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "chocolate",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "avela",
+          "valor": 60,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Banofe",
+          "borda": "chocolate",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Coco com chocolate",
+          "borda": "chocolate",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/coco-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 144,
+          "saborDaPizza": "Marguerita",
+          "borda": "requeijao",
+          "valor": 39,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/marguerita.jpg\">\n        <div>",
+          "tempoDeEspera": 50
         }
       ],
       "telefone": "+551141499080",
@@ -3051,6 +3259,92 @@
       "uf": "SP",
       "complemento": "222",
       "id": 165
+    },
+    {
+      "email": "asdasda",
+      "senha": "asdasda",
+      "cep": "06825-050",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "foto": "",
+          "valor": 28,
+          "tempoDeEspera": 0,
+          "statusDoPedido": ""
+        },
+        {
+          "idDoPedido": 166,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 166,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "prestigio",
+          "valor": 53,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 166,
+          "saborDaPizza": "Avelã com chocolate",
+          "borda": "avela",
+          "valor": 60,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/avela-chocolate.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        }
+      ],
+      "telefone": "11930166675",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Baviera",
+      "bairro": "Parque das Chácaras",
+      "uf": "SP",
+      "complemento": "22",
+      "id": 166
+    },
+    {
+      "email": "VEGANO",
+      "senha": "VEGANO",
+      "cep": "06823420",
+      "pedido": [
+        {
+          "saborDaPizza": "",
+          "borda": "",
+          "foto": "",
+          "valor": 28,
+          "tempoDeEspera": 0,
+          "statusDoPedido": ""
+        },
+        {
+          "idDoPedido": 167,
+          "saborDaPizza": "Banofe",
+          "borda": "prestigio",
+          "valor": 50,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/banofe.jpg\">\n        <div>",
+          "tempoDeEspera": 60
+        },
+        {
+          "idDoPedido": 167,
+          "saborDaPizza": "Frango com catupiry",
+          "borda": "cream-chease",
+          "valor": 34.5,
+          "foto": "<div class=\"row col-md-12\">\n        <img src=\"../../../../../assets/imagens/frango-catupiry.jpg\">\n        <div>",
+          "tempoDeEspera": 50
+        }
+      ],
+      "telefone": "+551141499080",
+      "celular": "06825-050",
+      "localidade": "Embu das Artes",
+      "logradouro": "Rua Duartina",
+      "bairro": "Jardim Dom José",
+      "uf": "SP",
+      "complemento": "222",
+      "id": 167
     }
   ]
 }

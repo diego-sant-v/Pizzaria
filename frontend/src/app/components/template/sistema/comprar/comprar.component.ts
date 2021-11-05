@@ -13,6 +13,7 @@ import { SectionComponent } from '../../section/section.component';
   styleUrls: ['./comprar.component.css']
 })
 export class ComprarComponent implements OnInit {
+  tempoDeEsperaCadastro: any;
   saborSalgada: boolean = false;
   saborDoce: boolean = false;
   sabormeioAmeio: boolean = false;
@@ -73,6 +74,7 @@ export class ComprarComponent implements OnInit {
       logradouro: this.clienteService.usuarioLogado.logradouro,
       complemento: this.clienteService.usuarioLogado.complemento,
       valor: this.pizza.valor,
+      tempoMedioDeEspera: this.clienteService.tempoMediodeEspera,
       cep: this.cep}
     })
     this.clienteService.informacoesPedido = [this.pizza.sabor, this.pizza.borda, 
@@ -127,6 +129,8 @@ export class ComprarComponent implements OnInit {
        <img src="../../../../../assets/imagens/portuguesa.jpg">
        <div>`
        this.pizza.valor = 25
+       this.clienteService.tempoMediodeEspera = 50
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Calabresa':
@@ -149,6 +153,8 @@ export class ComprarComponent implements OnInit {
        <img src="../../../../../assets/imagens/calabresa.jpg">
        <div>`
        this.pizza.valor = 22
+       this.clienteService.tempoMediodeEspera = 50
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Marguerita':
@@ -171,6 +177,8 @@ export class ComprarComponent implements OnInit {
        <img src="../../../../../assets/imagens/marguerita.jpg">
        <div>`
        this.pizza.valor = 28
+       this.clienteService.tempoMediodeEspera = 50
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Frango com catupiry':
@@ -193,6 +201,8 @@ export class ComprarComponent implements OnInit {
        <img src="../../../../../assets/imagens/frango-catupiry.jpg">
        <div>`
        this.pizza.valor = 28
+       this.clienteService.tempoMediodeEspera = 50
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Mussarela':
@@ -213,6 +223,8 @@ export class ComprarComponent implements OnInit {
        <img src="../../../../../assets/imagens/mucarela.jpg">
        <div>`
        this.pizza.valor = 25
+       this.clienteService.tempoMediodeEspera = 50
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Napolitana':
@@ -235,6 +247,8 @@ export class ComprarComponent implements OnInit {
        <img src="../../../../../assets/imagens/napolitano.jpg">
        <div>`
        this.pizza.valor = 26
+       this.clienteService.tempoMediodeEspera = 50
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Morango com chocolate':
@@ -256,6 +270,8 @@ export class ComprarComponent implements OnInit {
        <img src="../../../../../assets/imagens/morango-chocolate.jpg">
        <div>`
        this.pizza.valor = 35
+       this.clienteService.tempoMediodeEspera = 60
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Coco com chocolate':
@@ -276,6 +292,8 @@ export class ComprarComponent implements OnInit {
         this.pizza.foto = `<div class="row col-md-12">
        <img src="../../../../../assets/imagens/coco-chocolate.jpg">
        <div>`
+       this.clienteService.tempoMediodeEspera = 60
+       this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
        this.pizza.valor = 42
         break;
 
@@ -297,6 +315,8 @@ export class ComprarComponent implements OnInit {
          <img src="../../../../../assets/imagens/avela-chocolate.jpg">
          <div>`
          this.pizza.valor = 45
+         this.clienteService.tempoMediodeEspera = 60
+         this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Banofe':
@@ -316,6 +336,8 @@ export class ComprarComponent implements OnInit {
            <img src="../../../../../assets/imagens/banofe.jpg">
            <div>`
            this.pizza.valor = 42
+           this.clienteService.tempoMediodeEspera = 60
+           this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
       case 'Romeu e Julieta':
@@ -336,6 +358,8 @@ export class ComprarComponent implements OnInit {
            <img src="../../../../../assets/imagens/romeu-julieta.jpg">
            <div>`
            this.pizza.valor = 43
+           this.clienteService.tempoMediodeEspera = 60
+           this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
 
         case 'Mms':
@@ -356,7 +380,10 @@ export class ComprarComponent implements OnInit {
            <img src="../../../../../assets/imagens/mms.jpg">
            <div>`
            this.pizza.valor = 40
+           this.clienteService.tempoMediodeEspera = 60
+           this.tempoDeEsperaCadastro = this.clienteService.tempoMediodeEspera
         break;
+
     }
 
     console.log('valor da pizza é')

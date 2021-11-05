@@ -29,6 +29,7 @@ export class ClienteService {
  //declarei a variavel usuarioLogado aqui na serviço
  //na section.component.ts eu atribui a ela o valor do usuario logado atual
  //e em comprar eu acesso essa variavel com o seu valor mudado
+ tempoMediodeEspera: number
  usuarioLogado: Cliente;
  informacoesPedido: any;
  valorDaPizza: any;
@@ -51,6 +52,19 @@ export class ClienteService {
   create(cliente: Cliente): Observable<Cliente> {
     //mandando requisicao http pro server
     return this.http.post<Cliente>(this.API, cliente)
+  }
+
+  estimarTempoDePreparo(cliente: Cliente){
+    //setTimeout(() => {
+    //console.log('tempo medio atualizado, novo é:')
+     //this.tempoMediodeEspera = 0
+     //this.usuarioLogado.pedido?.map(x => x.tempoDeEspera).push(20)
+     //a cada 4,5 segundo eu adiciono o elemento de numero 5 no final do array
+     //na verdade era pra a cada passagem no timer ele subtrair um tempo da propriedade
+     //mas ainda nao estou conseguindo
+     //return this.http.put<Cliente>(this.APIATUALIZA, cliente)
+    //}, 4500)
+    
   }
 
   atualizar(cliente: Cliente): Observable<Cliente> {

@@ -163,6 +163,12 @@
                             </mat-card-header>
                                 <span [innerHTML]="pizza.foto" alt="Foto da pizza"></span>
                                 <mat-list-item role="listitem" [innerHTML]="pizza.ingredientes"></mat-list-item>
+                                <mat-list-item role="listitem">
+                                    <h2>O tempo médio de espera é:</h2>
+                                    <span>
+                                        <b>{{tempoDeEsperaCadastro}} minutos</b>
+                                    </span>
+                                </mat-list-item>
                                 <div class="row div-alinha">
                                     <mat-list role="list" *ngIf="pizza.observacoes != ''">
                                             <h2>Observações:</h2>
